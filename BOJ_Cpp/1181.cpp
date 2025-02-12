@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+// 단어 정렬
 
 bool Comapare(string a, string b) {
 	if (a.length() == b.length())
