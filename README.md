@@ -1,7 +1,6 @@
 # Algorithm
  Algorithm Practice
 
-# Algorithm
 
 ## C++
 <bits/stdc++.h> 헤더파일 추가 방법
