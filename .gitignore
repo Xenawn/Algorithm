@@ -5,6 +5,9 @@
 # Prerequisites
 *.d
 
+#Obsidian
+Tips/
+
 # Compiled Object files
 *.slo
 *.lo
