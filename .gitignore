@@ -6,7 +6,7 @@
 *.d
 
 #Obsidian
-Notes/
+Algorithm-Notes/
 
 # Compiled Object files
 *.slo
