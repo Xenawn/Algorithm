@@ -11,7 +11,7 @@ int main() {
 
 	int m, n;
 	int mx = 0;
-	int count = 0;
+	
 	cin >> m >> n;
 
 	for (int i = 0; i < n; i++) {
@@ -20,17 +20,13 @@ int main() {
 		}
 	}
 
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < m; j++) {
-			rip[i][j] = 0;
-		}
-	}
+
 	queue <pair<int, int>> Q;
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < m; j++) {
 			if (board[i][j]==1) {
 				Q.push({ i,j });
-				count++;
+				
 			}
 		}
 	}
