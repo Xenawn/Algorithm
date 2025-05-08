@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Lv1. 나머지가 1이 되는 수 찾.cpp">
+    <ClCompile Include="Lv1. 약수의 합.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
