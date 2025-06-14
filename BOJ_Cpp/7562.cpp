@@ -6,9 +6,9 @@ int dy[8] = {1,2,-1,-2,2,1,-2,-1};
 
 int main() {
 
-	int t, x;
-	int s1, s2;
-	int g1, g2;
+	int t, x; // 테캐 수, 칸 수
+	int s1, s2; // 시작점
+	int g1, g2; // 도착점
 	
 	queue<pair<int, int>> Q;
 	cin >> t;
@@ -26,7 +26,7 @@ int main() {
 
 			pair<int, int > cur = Q.front();
 			Q.pop();
-
+			
 			for (int dir = 0; dir < 8; dir++) {
 				int nx = cur.first + dx[dir];
 				int ny = cur.second + dy[dir];
