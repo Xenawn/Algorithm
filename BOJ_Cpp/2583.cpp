@@ -31,13 +31,11 @@ int main() {
 	for (int i = 0; i < m; i++) {
 		for (int j = 0; j < n; j++) {
 			count = 0;
-			if (board[i][j] != 1 && !vis[i][j]) {
-				vis[i][j] = 1;
-				Q.push({ i,j });
-				area++; // 영역 시작
-				count++; // 첫 지점 count 넣기
-			}
-
+			if (board[i][j] == 1 || vis[i][j] ==1 ) continue;
+			vis[i][j] = 1;
+			Q.push({ i,j });
+			area++; // 영역 시작
+			count++; // 첫 지점 count 넣기
 			while (!Q.empty()) {
 
 				pair<int, int> cur = Q.front();
@@ -56,8 +54,6 @@ int main() {
 					count++;
 				}
 			}
-			
-			if (count == 0)continue;
 			countScore.push_back(count);
 		}
 		
