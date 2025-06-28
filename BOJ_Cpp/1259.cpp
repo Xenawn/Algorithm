@@ -10,20 +10,18 @@ int main() {
 		isPalin = true;
 		cin >> s;
 		if (s == "0") break;
-		int size = s.length()-1;
-		int count = s.length() / 2;
-		for (int i = 0; i < count; i++) {
+		
+		for (int i = 0; i < s.length() / 2; i++) {
 			
-			if (s[i] != s[size]) {
-				cout << "no" << endl;
+			if (s[i] != s[s.length()-1-i]) {
 				isPalin = false;
 				break;
 			}
-			size--;
 		}
-		if(isPalin)
+		if (isPalin)
 			cout << "yes" << endl;
-		
+		else
+			cout << "no" << endl;
 	}
 
 }
