@@ -13,10 +13,9 @@ int main() {
 		cin >> num;
 		rest = 0;
 		for (int i = 1; i <= num; i++) { // 1과 자기 자신으로만 나누어져야함
-			if (num % i == 0) rest++;
+			if (num % i == 0) rest++; 
 		}
-			
-		if (rest == 2) count++;
+		if (rest == 2) count++; // 자기 자신과 1로만 나누어떨어지는 경우 2가지
 	}
 
 	cout << count;
