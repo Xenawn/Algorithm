@@ -6,7 +6,7 @@ int main() {
 	int a, b, c;
 	cin >> a >> b >> c;
 
-	int h = c / 60;
+	int h;
 	int m = b + c;
 	h = m / 60;
 	m %= 60;
