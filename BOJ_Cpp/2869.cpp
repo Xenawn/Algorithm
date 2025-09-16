@@ -3,14 +3,14 @@ using namespace std;
 
 int main() {
 
-	
-	int a, b;
-	while (true) {
-		cin >> a >> b;
+	long long a, b, v;
 
-		if (a == 0 && b == 0) break;
-		if ((b % a != 0) && (a % b != 0)) cout << "neither" << '\n';
-		else if (a % b == 0) cout << "multiple" << '\n';
-		else if (b % a == 0) cout << "factor" << '\n';
-	}
+	cin >> a >> b >> v;
+
+	long long count = 0;
+	
+	count = (v - a) / (a-b);
+	if ((v - a) % (a-b) == 0) count += 1;
+	else count += 2;
+	cout << count;
 }
