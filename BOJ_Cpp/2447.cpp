@@ -1,18 +1,42 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int fibo(int n)
-{
-	if (n <=1) return n;
-	return fibo(n - 1) + fibo(n - 2);
+char board[2300][2300];
+void solve(int x, int y, int n) {
+
+	if (n == 1) {
+		board[x][y] = '*';
+		return;
+	}
+	
+	
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 3; j++) {
+			if (i == 1 && j == 1) continue;
+			solve(x + n / 3 * i, y + n / 3 * j,n/3);
+		}
+	}
+
 
 }
-
 int main() {
 
+	ios::sync_with_stdio(0);
+	cin.tie(0);
 	int n;
 
 	cin >> n;
 
-	cout<<fibo(n);
+	for (int i = 0; i < n; i++) {
+		fill(board[i], board[i] + n, ' ');
+	}
+
+	solve(0,0,n);
+
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			cout << board[i][j];
+		}
+		cout << '\n';
+	}
 }
