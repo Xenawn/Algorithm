@@ -19,15 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    <ClCompile Include="2292.cpp" />
-=======
-    <ClCompile Include="15650.cpp" />
->>>>>>> Stashed changes
-=======
-    <ClCompile Include="15650.cpp" />
->>>>>>> Stashed changes
+    <ClCompile Include="2440.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
