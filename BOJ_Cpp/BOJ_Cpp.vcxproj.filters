@@ -15,11 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <ClCompile Include="1764.cpp">
-=======
-    <ClCompile Include="11723.cpp">
->>>>>>> 231732eb427963b79941a0aafa9e56603db00ede
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
