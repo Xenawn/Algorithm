@@ -59,7 +59,7 @@ int main() {
 	for (int i = 0; i < h; i++) {
 		for (int j = 0; j < n; j++){
 			for (int k = 0; k < m; k++) {
-				if (day[j][k][j] == -1 && board[j][k][i]==0) {
+				if (day[j][k][i] == -1 && board[j][k][i]==0) {
 					cout << -1;
 					return 0;
 				}
