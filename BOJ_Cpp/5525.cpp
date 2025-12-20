@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	int n, m;
+	string str;
+	cin >> n >> m >> str;
+	string sv;
+	int cnt = 0;
+	
+	for (int i = 0; i < str.size(); i++) {
+		
+		int k = 0; 
+		if (str[i] == 'O') continue;
+
+		while (str[i + 1] == 'O' && str[i + 2] == 'I') {
+			k++;
+
+			if (k == n) {
+				cnt++;
+				k--;
+			}
+			i += 2;
+		}
+	}
+
+	cout << cnt;
+	
+}
