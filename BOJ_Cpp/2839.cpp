@@ -3,18 +3,23 @@ using namespace std;
 
 int main() {
 
-	ios::sync_with_stdio(0);
-	cin.tie(0);
-
 	int n;
 
 	cin >> n;
+	int cnt = 0;
 
-	n /= 4;
-
-	for (int i = 0; i < n; i++) {
-		cout << "long ";
-	}
-	cout << "int";
+	
+	while (n>=0) {
 		
+		if (n % 5 == 0) {
+			cnt += n / 5;
+			cout << cnt;
+			return 0;
+		}
+
+		n -= 3;
+		cnt++;
+	}
+
+	cout << -1;
 }
